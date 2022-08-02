@@ -41,23 +41,24 @@ const ContactForm = (props) => {
     setEnteredEmailIsValid(true);
     setEnteredMessageIsValid(true);
     console.log(Message);
-    setStatus("Sending...");
-    const { name, email, message } = event.target.elements;
-    let details = {
-      name: name.value,
-      email: email.value,
-      message: message.value,
-    };
-    let response = await fetch("http://localhost:3000/", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json;charset=utf-8",
-      },
-      body: JSON.stringify(details),
-    });
-    setStatus("Send message");
-    let result = await response.json();
-    alert(result.status);
+    
+//     setStatus("Sending...");
+//     const { name, email, message } = event.target.elements;
+//     let details = {
+//       name: name.value,
+//       email: email.value,
+//       message: message.value,
+//     };
+//     let response = await fetch("http://localhost:3000/", {
+//       method: "POST",
+//       headers: {
+//         "Content-Type": "application/json;charset=utf-8",
+//       },
+//       body: JSON.stringify(details),
+//     });
+//     setStatus("Send message");
+//     let result = await response.json();
+//     alert(result.status);
 
     clearForm();
   };
