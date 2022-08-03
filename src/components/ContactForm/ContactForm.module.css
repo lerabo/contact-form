@@ -80,10 +80,7 @@ button:active {
 
 .form-actions {
   text-align: center;
-}
-
-.form-actions button {
-  margin-left: 1rem;
+  max-width: 20rem;
 }
 
 .invalid input {
