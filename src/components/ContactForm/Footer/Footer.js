@@ -1,6 +1,6 @@
 import React from "react";
 import { MDBIcon } from "mdb-react-ui-kit";
-import footerImg from "../../assets/footer.png";
+import footerImg from "../../../assets/footer.png";
 import styles from "./Footer.module.css";
 
 const Footer = () => {

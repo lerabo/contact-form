@@ -1,4 +1,4 @@
-import Footer from "./Footer";
+import Footer from "../СontactForm/Footer/Footer";
 
 const Layout = (props) => {
   return (
