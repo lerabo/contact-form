@@ -36,8 +36,8 @@ html {
 .form-control input,
 .form-control select {
   font: inherit;
-  padding: 0.5rem;
-  border-radius: 4px;
+  padding: 1.5rem;
+  border-radius: 10px;
   border: 1px solid #ccc;
   width: 40rem;
   max-width: 100%;
@@ -62,18 +62,18 @@ html {
 
 button {
   font: inherit;
-  background-color: #240370;
+  background-color: #FAD34F;
   color: white;
-  border: 1px solid #240370;
-  padding: 0.5rem 1.5rem;
-  border-radius: 4px;
+  border: 1px solid #FAD34F;
+  padding: 1rem 2rem;
+  border-radius: 40px;
   cursor: pointer;
 }
 
 button:hover,
 button:active {
-  background-color: #33059e;
-  border-color: #33059e;
+  background-color: #FAD34F;
+  border-color: #FAD34F;
 }
 
 .form-actions {

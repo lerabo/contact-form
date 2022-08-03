@@ -28,13 +28,6 @@ const ContactForm = (props) => {
       [event.target.id] : event.target.value });
   };
 
-  // const emailInputChangeHandler = (event) => {
-  //   setValues({ email: event.target.value });
-  // };
-
-  // const messageInputChangeHandler = (event) => {
-  //   setValues({ message: event.target.value });
-  // };
 
   const submitHandler = (event) => {
     event.preventDefault();
