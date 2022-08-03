@@ -9,12 +9,15 @@ html {
 }
 
 .app {
-  width: 90%;
-  max-width: 43rem;
+  width: 100%;
+  max-width: 45rem;
   padding: 1rem;
   border-radius: 12px;
-  background-color: white;
-  margin: 3rem auto;
+  margin: auto;
+  padding-top: 5rem;
+}
+.app label {
+  font-size: 1.5em;
 }
 
 .form-control {
@@ -38,7 +41,7 @@ html {
   padding: 1.5rem;
   border-radius: 10px;
   border: 1px solid #ccc;
-  width: 40rem;
+  width: 20rem;
   max-width: 100%;
 }
 
@@ -64,7 +67,7 @@ button {
   background-color: #fad34f;
   color: white;
   border: 1px solid #fad34f;
-  padding: 1rem 2rem;
+  padding: 1rem 3rem;
   border-radius: 40px;
   cursor: pointer;
 }

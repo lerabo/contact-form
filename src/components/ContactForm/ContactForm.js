@@ -33,33 +33,34 @@ const ContactForm = (props) => {
 
   return (
     <form className={styles.app} onSubmit={submitHandler}>
+      <label>Reach out to us!</label>
       <div className={styles["form-control"]}>
-        <label>Your name*:</label>
         <input
           type="text"
           id="name"
           value={values.name}
           onChange={inputChangeHandler}
+          placeholder="Your name*:"
           required
         />
       </div>
       <div className={styles["form-control"]}>
-        <label>Your e-mail*:</label>
         <input
           type="text"
           id="email"
           value={values.email}
           onChange={inputChangeHandler}
+          placeholder="Your e-mail*:"
           required
         />
       </div>
       <div className={styles["form-control"]}>
-        <label>Your message*:</label>
         <input
           type="text"
           id="message"
           value={values.message}
           onChange={inputChangeHandler}
+          placeholder="Your message*:"
           required
         />
       </div>
