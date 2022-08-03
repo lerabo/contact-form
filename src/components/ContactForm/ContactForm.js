@@ -23,10 +23,17 @@ const ContactForm = (props) => {
     });
   };
 
-  const submitHandler = (event) => {
+  const submitHandler = async (event) => {
     event.preventDefault();
-
-    console.log(values);
+    const response = await fetch("http://localhost:3001/contacts", {
+      method: "POST",
+      body: JSON.stringify(values),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
+    const data = await response.json();
+    console.log(data);
 
     clearForm();
   };

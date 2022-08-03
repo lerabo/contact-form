@@ -2,6 +2,7 @@ footer {
   background-image: url("../../assets/footer.png");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -15,7 +16,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 1rem 0 3rem 0;
+  margin: 2rem 0 2rem 0;
 }
 
 .socials li {
