@@ -8,11 +8,6 @@ const ContactForm = (props) => {
     message: "",
   });
 
-  const Message = {
-    name: values.name,
-    email: values.email,
-    message: values.message,
-  };
 
   const clearForm = () => {
     setValues({
@@ -32,7 +27,7 @@ const ContactForm = (props) => {
   const submitHandler = (event) => {
     event.preventDefault();
 
-    console.log(Message);
+    console.log(values);
 
     clearForm();
   };
