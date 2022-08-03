@@ -23,11 +23,11 @@ const ContactForm = (props) => {
   };
 
   const inputChangeHandler = (event) => {
-    setValues({ 
+    setValues({
       ...values,
-      [event.target.id] : event.target.value });
+      [event.target.id]: event.target.value,
+    });
   };
-
 
   const submitHandler = (event) => {
     event.preventDefault();
@@ -41,27 +41,18 @@ const ContactForm = (props) => {
     <form className={styles.app} onSubmit={submitHandler}>
       <div className={styles["form-control"]}>
         <label>Your name*:</label>
-        <input
-          type="text"
-          id="name"
-          onChange={inputChangeHandler}
-          required
-        />
+        <input type="text" id="name" value={values.name} onChange={inputChangeHandler} required />
       </div>
       <div className={styles["form-control"]}>
         <label>Your e-mail*:</label>
-        <input
-          type="text"
-          id="email"
-          onChange={inputChangeHandler}
-          required
-        />
+        <input type="text" id="email" value={values.email} onChange={inputChangeHandler} required />
       </div>
       <div className={styles["form-control"]}>
         <label>Your message*:</label>
         <input
           type="text"
           id="message"
+          value={values.message}
           onChange={inputChangeHandler}
           required
         />
