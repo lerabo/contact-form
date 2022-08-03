@@ -47,8 +47,8 @@ html {
 
 .form-control input:focus {
   outline: none;
-  border-color: #240370;
-  background-color: #e0d4fd;
+  border-color: #f472b7;
+  background-color: #ffcce6;
 }
 
 .control-group {
