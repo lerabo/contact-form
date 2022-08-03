@@ -8,7 +8,6 @@ const ContactForm = (props) => {
     message: "",
   });
 
-
   const clearForm = () => {
     setValues({
       name: "",
@@ -36,11 +35,23 @@ const ContactForm = (props) => {
     <form className={styles.app} onSubmit={submitHandler}>
       <div className={styles["form-control"]}>
         <label>Your name*:</label>
-        <input type="text" id="name" value={values.name} onChange={inputChangeHandler} required />
+        <input
+          type="text"
+          id="name"
+          value={values.name}
+          onChange={inputChangeHandler}
+          required
+        />
       </div>
       <div className={styles["form-control"]}>
         <label>Your e-mail*:</label>
-        <input type="text" id="email" value={values.email} onChange={inputChangeHandler} required />
+        <input
+          type="text"
+          id="email"
+          value={values.email}
+          onChange={inputChangeHandler}
+          required
+        />
       </div>
       <div className={styles["form-control"]}>
         <label>Your message*:</label>
