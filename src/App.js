@@ -1,5 +1,5 @@
-import Layout from "./components/Layout/Layout";
-import ContactForm from "./components/СontactForm/ContactForm";
+import Layout from "./components/Layout";
+import ContactForm from "./components/ContactForm";
 
 function App() {
   return (
