@@ -25,7 +25,7 @@ const ContactForm = (props) => {
 
   const submitHandler = async (event) => {
     event.preventDefault();
-    const response = await fetch("http://localhost:3001/contacts", {
+    const response = await fetch(`${process.env.REACT_APP_API_URL}`, {
       method: "POST",
       body: JSON.stringify(values),
       headers: {
