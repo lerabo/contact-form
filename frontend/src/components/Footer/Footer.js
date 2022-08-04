@@ -1,11 +1,11 @@
 import React from "react";
 import { MDBIcon } from "mdbreact";
-import { StyledFooter, StyledUl} from './styles'
+import { StyledFooter, IconList} from './styles'
 
 const Footer = () => {
   return (
     <StyledFooter>
-      <StyledUl>
+      <IconList>
         <li>
           <MDBIcon fab icon="instagram" />
         </li>
@@ -18,7 +18,7 @@ const Footer = () => {
         <li>
           <MDBIcon fab icon="pinterest-p" />
         </li>
-      </StyledUl>
+      </IconList>
     </StyledFooter>
   );
 };

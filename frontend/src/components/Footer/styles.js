@@ -14,7 +14,7 @@ export const StyledFooter = styled.footer`
   max-width: 100%;
 `;
 
-export const StyledUl = styled.ul`
+export const IconList = styled.ul`
   list-style: none;
   display: flex;
   align-items: center;
