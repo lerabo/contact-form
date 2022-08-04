@@ -1,6 +1,6 @@
 # compiled output
-/nestjs/dist
-/nestjs/node_modules
+/beckend/dist
+/backend/node_modules
 node_modules
 /frontend/node_modules
 
