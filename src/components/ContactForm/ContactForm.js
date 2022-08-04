@@ -5,14 +5,14 @@ const ContactForm = (props) => {
   const [values, setValues] = useState({
     name: "",
     email: "",
-    message: "",
+    text: "",
   });
 
   const clearForm = () => {
     setValues({
       name: "",
       email: "",
-      message: "",
+      text: "",
     });
   };
 
@@ -64,8 +64,8 @@ const ContactForm = (props) => {
       <div>
         <FormInput
           type="text"
-          id="message"
-          value={values.message}
+          id="text"
+          value={values.text}
           onChange={inputChangeHandler}
           placeholder="Your message*"
           required
