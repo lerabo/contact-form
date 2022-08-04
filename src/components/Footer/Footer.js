@@ -1,6 +1,6 @@
 import React from "react";
 import { MDBIcon } from "mdbreact";
-import { StyledFooter, IconList} from './styles'
+import { StyledFooter, IconList } from "./styles";
 
 const Footer = () => {
   return (

@@ -47,7 +47,7 @@ const ContactForm = (props) => {
           id="name"
           value={values.name}
           onChange={inputChangeHandler}
-          placeholder="Your name*:"
+          placeholder="Your name*"
           required
         />
       </div>
@@ -57,7 +57,7 @@ const ContactForm = (props) => {
           id="email"
           value={values.email}
           onChange={inputChangeHandler}
-          placeholder="Your e-mail*:"
+          placeholder="Your e-mail*"
           required
         />
       </div>
@@ -67,7 +67,7 @@ const ContactForm = (props) => {
           id="message"
           value={values.message}
           onChange={inputChangeHandler}
-          placeholder="Your message*:"
+          placeholder="Your message*"
           required
         />
       </div>

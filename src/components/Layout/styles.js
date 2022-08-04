@@ -6,5 +6,5 @@ export const StyledLayout = styled.div`
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100%;
+  height: 100%;
 `;
-

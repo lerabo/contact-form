@@ -18,22 +18,28 @@ export const FormLabel = styled.label`
   margin-bottom: 0.5rem;
   text-align: left;
   margin-bottom: 1rem;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 52px;
 `;
 
 export const FormInput = styled.input`
   margin-bottom: 1rem;
   display: block;
   font: inherit;
-  padding: 1.5rem;
+  padding: 1rem;
   border-radius: 10px;
   border: 1px solid #ccc;
   max-width: 100%;
   min-width: 40%;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
 
   &:focus {
     outline: none;
-    border-color: #17C431;
-    background-color: #DCF5E0;
+    border-color: #17c431;
+    background-color: #dcf5e0;
   }
 `;
 
@@ -43,15 +49,17 @@ export const FormButton = styled.button`
   color: white;
   border: 1px solid #fad34f;
   padding: 1rem 3rem;
-  margin-left:4rem;
+  margin-left: 4rem;
   border-radius: 40px;
   cursor: pointer;
   text-align: center;
   max-width: 100%;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
   &:hover,
   &:active {
-    background-color: #F0B610;
-    border-color: #F09110;
+    background-color: #f0b610;
+    border-color: #f09110;
   }
 `;
-

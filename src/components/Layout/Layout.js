@@ -1,5 +1,5 @@
 import Footer from "../Footer";
-import {StyledLayout} from "./styles";
+import { StyledLayout } from "./styles";
 
 const Layout = (props) => {
   return (
