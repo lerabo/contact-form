@@ -1,17 +1,13 @@
 import React from "react";
 import { MDBIcon } from "mdbreact";
-import styles from "./Footer.module.css";
-
-import "@fortawesome/fontawesome-free/css/all.min.css";
-import "bootstrap-css-only/css/bootstrap.min.css";
-import "mdbreact/dist/css/mdb.css";
+import { StyledFooter, StyledUl} from './styles'
 
 const Footer = () => {
   return (
-    <footer className={styles.footer}>
-      <ul className={styles.socials}>
+    <StyledFooter>
+      <StyledUl>
         <li>
-          <MDBIcon fab icon="instagram" className={styles.i} />
+          <MDBIcon fab icon="instagram" />
         </li>
         <li>
           <MDBIcon fab icon="twitter" />
@@ -22,8 +18,8 @@ const Footer = () => {
         <li>
           <MDBIcon fab icon="pinterest-p" />
         </li>
-      </ul>
-    </footer>
+      </StyledUl>
+    </StyledFooter>
   );
 };
 

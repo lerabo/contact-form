@@ -1,12 +1,12 @@
 import Footer from "../Footer";
-import styles from "./Layout.module.css";
+import {StyledLayout} from "./styles";
 
 const Layout = (props) => {
   return (
-    <div className={styles.container}>
+    <StyledLayout>
       {props.children}
       <Footer />
-    </div>
+    </StyledLayout>
   );
 };
 

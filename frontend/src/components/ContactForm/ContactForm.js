@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import styles from "./ContactForm.module.css";
+import { StyledButton, StyledForm, StyledDiv, Div } from "./styles";
 
 const ContactForm = (props) => {
   const [values, setValues] = useState({
@@ -39,9 +39,9 @@ const ContactForm = (props) => {
   };
 
   return (
-    <form className={styles.app} onSubmit={submitHandler}>
+    <StyledForm onSubmit={submitHandler}>
       <label>Reach out to us!</label>
-      <div className={styles["form-control"]}>
+      <StyledDiv>
         <input
           type="text"
           id="name"
@@ -50,8 +50,8 @@ const ContactForm = (props) => {
           placeholder="Your name*:"
           required
         />
-      </div>
-      <div className={styles["form-control"]}>
+      </StyledDiv>
+      <StyledDiv>
         <input
           type="text"
           id="email"
@@ -60,8 +60,8 @@ const ContactForm = (props) => {
           placeholder="Your e-mail*:"
           required
         />
-      </div>
-      <div className={styles["form-control"]}>
+      </StyledDiv>
+      <StyledDiv>
         <input
           type="text"
           id="message"
@@ -70,11 +70,11 @@ const ContactForm = (props) => {
           placeholder="Your message*:"
           required
         />
-      </div>
-      <div className={styles["form-actions"]}>
-        <button type="submit">Send message</button>
-      </div>
-    </form>
+      </StyledDiv>
+      <Div>
+        <StyledButton type="submit">Send message</StyledButton>
+      </Div>
+    </StyledForm>
   );
 };
 
