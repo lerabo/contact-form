@@ -40,9 +40,9 @@ export const contactFormSlice = createSlice({
       .addCase(submitContactForm.pending, (state) => {
         state.status = "loading";
       })
-      .addCase(submitContactForm.fulfilled, (state, action) => {
-        state.status = "idle";
-        state.values = initialState;
+      .addCase(submitContactForm.fulfilled, (state) => {
+        state.status = initialState.status;
+        state.values = initialState.values;
       });
   },
 });
