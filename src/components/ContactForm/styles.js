@@ -1,65 +1,57 @@
 import styled from "styled-components";
 
-export const StyledForm = styled.form`
-  width: 100%;
-  max-width: 45rem;
-  padding: 1rem;
-  border-radius: 12px;
-  margin: auto;
-  padding-top: 5rem;
-  min-width: 15rem;
-  flex: 1;
-`;
-
-export const FormLabel = styled.label`
-  display: block;
-  font-size: 1.5em;
-  font-weight: bold;
-  margin-bottom: 0.5rem;
-  text-align: left;
-  margin-bottom: 1rem;
-  font-weight: 400;
+export const PageTitle = styled.h1`
   font-size: 40px;
+  font-weight: 400;
   line-height: 52px;
+  margin: 30px 0;
+  text-align: center;
+
+  @media screen and (min-width: 600px) {
+    text-align: left;
+  }
 `;
 
 export const FormInput = styled.input`
-  margin-bottom: 1rem;
+  margin-bottom: 8px;
   display: block;
-  font: inherit;
-  padding: 1rem;
+  padding: 30px 46px;
   border-radius: 10px;
-  border: 1px solid #ccc;
-  max-width: 100%;
-  min-width: 40%;
-  font-weight: 400;
+  border: 1px solid #dcdcdc;
   font-size: 18px;
   line-height: 32px;
+  color: #2d2d2d;
+  width: calc(100% - 46px * 2);
+  max-width: 558px;
 
   &:focus {
-    outline: none;
-    border-color: #17c431;
-    background-color: #dcf5e0;
+    border-color: #2d2d2d;
   }
 `;
 
 export const FormButton = styled.button`
-  font: inherit;
-  background-color: #fad34f;
-  color: white;
-  border: 1px solid #fad34f;
-  padding: 1rem 3rem;
-  margin-left: 4rem;
-  border-radius: 40px;
-  cursor: pointer;
-  text-align: center;
-  max-width: 100%;
-  font-weight: 400;
+  margin-top: 16px;
   font-size: 18px;
   line-height: 18px;
-  &:hover,
-  &:active {
-    background-color: #f0b610;
-    border-color: #f09110;
+  background-color: #fad34f;
+  border-radius: 500px;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  padding: 28px 52px;
+  width: 100%;
+
+  @media screen and (min-width: 600px) {
+    width: auto;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &[disabled] {
+    cursor: default;
+    pointer-events: none;
+    background-color: #ccc;
   }
 `;

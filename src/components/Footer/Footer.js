@@ -1,28 +1,44 @@
 import React from "react";
-import { MDBIcon } from "mdbreact";
-import { StyledFooter, IconList } from "./styles";
-
-import "@fortawesome/fontawesome-free/css/all.min.css";
-import "bootstrap-css-only/css/bootstrap.min.css";
-import "mdbreact/dist/css/mdb.css";
+import {
+  StyledFooter,
+  IconList,
+  SmileCircleLeftIcon,
+  SmileCircleTopIcon,
+  SmileCircleRightIcon,
+} from "./styles";
+import FacebookIcon from "../../assets/icons/Facebook";
+import TwitterIcon from "../../assets/icons/Twitter";
+import LinkedInIcon from "../../assets/icons/LinkedIn";
+import PinterestIcon from "../../assets/icons/Pinterest";
 
 const Footer = () => {
   return (
     <StyledFooter>
+      <SmileCircleLeftIcon />
       <IconList>
         <li>
-          <MDBIcon fab icon="instagram" />
+          <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">
+            <LinkedInIcon />
+          </a>
         </li>
         <li>
-          <MDBIcon fab icon="twitter" />
+          <a href="https://twitter.com/" target="_blank" rel="noreferrer">
+            <TwitterIcon />
+          </a>
         </li>
         <li>
-          <MDBIcon fab icon="facebook-f" />
+          <a href="https://facebook.com/" target="_blank" rel="noreferrer">
+            <FacebookIcon />
+          </a>
         </li>
         <li>
-          <MDBIcon fab icon="pinterest-p" />
+          <a href="https://pinterest.com/" target="_blank" rel="noreferrer">
+            <PinterestIcon />
+          </a>
         </li>
       </IconList>
+      <SmileCircleTopIcon />
+      <SmileCircleRightIcon />
     </StyledFooter>
   );
 };

@@ -1,13 +1,17 @@
+import "normalize.css";
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
-html, body, #root{
-    font-family: Apercu Arabic Pro;
-    height:100%;
-}
+  html {
+    height: 100%;
+  }
+
   body {
-    margin: 0;
-    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #3E3E3E;
+    height: 100%;
   }
 `;
 

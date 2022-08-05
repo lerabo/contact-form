@@ -1,47 +1,36 @@
-import React, { useState } from "react";
-import { StyledForm, FormButton, FormInput, FormLabel } from "./styles";
+import { useDispatch, useSelector } from "react-redux";
+import {
+  getFormStatus,
+  getFormValues,
+  submitContactForm,
+  updateValues,
+} from "./contactFormSlice";
+import { FormButton, FormInput, PageTitle } from "./styles";
 
-const ContactForm = (props) => {
-  const [values, setValues] = useState({
-    name: "",
-    email: "",
-    text: "",
-  });
+const ContactForm = () => {
+  const dispatch = useDispatch();
 
-  const clearForm = () => {
-    setValues({
-      name: "",
-      email: "",
-      text: "",
-    });
-  };
+  const values = useSelector(getFormValues);
+  const status = useSelector(getFormStatus);
 
   const inputChangeHandler = (event) => {
-    setValues({
-      ...values,
-      [event.target.id]: event.target.value,
-    });
+    dispatch(
+      updateValues({
+        [event.target.id]: event.target.value,
+      })
+    );
   };
 
-  const submitHandler = async (event) => {
+  const submitHandler = (event) => {
     event.preventDefault();
-    const response = await fetch(`${process.env.REACT_APP_API_URL}`, {
-      method: "POST",
-      body: JSON.stringify(values),
-      headers: {
-        "Content-Type": "application/json",
-      },
-    });
-    const data = await response.json();
-    console.log(data);
 
-    clearForm();
+    dispatch(submitContactForm(values));
   };
 
   return (
-    <StyledForm onSubmit={submitHandler}>
-      <FormLabel>Reach out to us!</FormLabel>
-      <div>
+    <>
+      <PageTitle>Reach out to us!</PageTitle>
+      <form onSubmit={submitHandler}>
         <FormInput
           type="text"
           id="name"
@@ -50,31 +39,28 @@ const ContactForm = (props) => {
           placeholder="Your name*"
           required
         />
-      </div>
-      <div>
         <FormInput
-          type="text"
+          type="email"
           id="email"
           value={values.email}
           onChange={inputChangeHandler}
           placeholder="Your e-mail*"
           required
         />
-      </div>
-      <div>
         <FormInput
           type="text"
           id="text"
+          as="textarea"
           value={values.text}
           onChange={inputChangeHandler}
           placeholder="Your message*"
           required
         />
-      </div>
-      <div>
-        <FormButton type="submit">Send message</FormButton>
-      </div>
-    </StyledForm>
+        <FormButton type="submit" disabled={status !== "idle"}>
+          Send message
+        </FormButton>
+      </form>
+    </>
   );
 };
 

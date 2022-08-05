@@ -1,12 +1,13 @@
 import Footer from "../Footer";
-import { StyledLayout } from "./styles";
+import { Container, Content, SmileCircleHeaderIcon } from "./styles";
 
 const Layout = (props) => {
   return (
-    <StyledLayout>
-      {props.children}
+    <Container>
+      <SmileCircleHeaderIcon />
+      <Content>{props.children}</Content>
       <Footer />
-    </StyledLayout>
+    </Container>
   );
 };
 
